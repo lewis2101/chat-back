@@ -3,7 +3,7 @@ import http from 'http'
 import { Server } from 'socket.io'
 import cors from "cors";
 import bodyParser from 'body-parser'
-import {useMessages} from "./history/messages.js";
+import {useMessages} from "./src/history/messages.js";
 import {v4} from "uuid";
 
 const PORT = 8080
