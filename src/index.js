@@ -75,6 +75,12 @@ app.use('/create-room', (req, res) => {
     })
 })
 
+app.use('/', (req, res) => {
+    res.send({
+        title: 'SUCCESS'
+    })
+})
+
 app.use('/room', (req, res) => {
     const { room } = req.body
     const data = messages.getName(room)
